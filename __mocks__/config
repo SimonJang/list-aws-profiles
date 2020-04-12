@@ -1,0 +1,6 @@
+[profile test]
+region = eu-west-1
+output = json
+[profile test-01]
+region = eu-west-1
+output = json

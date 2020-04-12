@@ -1,0 +1,32 @@
+{
+  "name": "list-aws-profiles",
+  "version": "0.0.0-semantically-released",
+  "description": "List local AWS profiles",
+  "main": "lib/cjs/index.js",
+  "scripts": {
+    "test": "benmvp test",
+    "start": "benmvp start",
+    "build": "benmvp build"
+  },
+  "keywords": [],
+  "author": "Simon Jang",
+  "license": "MIT",
+  "devDependencies": {
+    "@benmvp/cli": "^7.0.0",
+    "@types/sinon": "^9.0.0",
+    "sinon": "^9.0.2"
+  },
+  "module": "lib/esm/index.js",
+  "jsnext:main": "lib/esm/index.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {}
+}
