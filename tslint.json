@@ -1,0 +1,10 @@
+{
+	"extends": ["tslint-xo", "tslint-config-prettier"],
+	"rules": {
+		"no-duplicate-imports": false,
+		"unified-signatures": false,
+		"no-void-expression": false,
+		"only-arrow-functions": false,
+		"typedef": false
+	}
+}

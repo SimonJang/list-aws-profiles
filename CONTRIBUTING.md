@@ -14,10 +14,9 @@ Thank you for your interest in contributing to the library!
 ## Setup
 
 1. [For the repository](https://help.github.com/articles/fork-a-repo/)
-1. Clone your new forked repository to your local computer
-1. Set the `benmvp` repository as your branch's upstream branch: `git remote add upstream https://github.com/benmvp/list-aws-profiles.git`
-1. Navigate to the root directory of your newly cloned repository: `cd /path/to/list-aws-profiles`
-1. `npm install` to install local dependencies
+2. Clone your new forked repository to your local computer
+3. Navigate to the root directory of your newly cloned repository: `cd /path/to/list-aws-profiles`
+4. `npm install` to install local dependencies
 
 ## Using branches to submit changes
 
@@ -25,13 +24,11 @@ To work on changes, create a new branch on your local repository. `git checkout 
 
 ## Keeping your local repository up to date
 
-To ensure your branch never gets out of sync with [https://github.com/benmvp/list-aws-profiles](benmvp)'s `master`, ensure that you have your upstream set properly (see the [Setup](#setup) step)
-
 1. `git checkout master` (you may have to [stash](https://git-scm.com/book/en/v1/Git-Tools-Stashing) or commit your local changes)
-1. `git pull upstream master`
-1. `git checkout <your-new-branch-name>`
-1. `git rebase master`
-1. If you've stashed changes, [unstash](https://git-scm.com/book/en/v1/Git-Tools-Stashing) them now, otherwise your branch should now be up to date
+2. `git pull upstream master`
+3. `git checkout <your-new-branch-name>`
+4. `git rebase master`
+5. If you've stashed changes, [unstash](https://git-scm.com/book/en/v1/Git-Tools-Stashing) them now, otherwise your branch should now be up to date
 
 Always try to keep your `master` "clean" by only pulling changes directly from `upstream` into your master branch and rebasing those changes onto your working branch.
 
@@ -41,15 +38,15 @@ It is always a good idea to pull the upstream branch in to your master branch be
 
 Create issues to file bugs, changes, and proposals.
 
-Before opening a new issue, please [search](https://github.com/benmvp/list-aws-profiles/issues) to see if there has been previous discussion about the same feature or issue. If so, please contribute to the discussion there.
+Before opening a new issue, please [search](https://github.com/simonjang/list-aws-profiles/issues) to see if there has been previous discussion about the same feature or issue. If so, please contribute to the discussion there.
 
-If nothing is found, feel free to [open a new issue](https://github.com/benmvp/list-aws-profiles/issues) and fill out the issue template to the best of your ability.
+If nothing is found, feel free to [open a new issue](https://github.com/simonjang/list-aws-profiles/issues) and fill out the issue template to the best of your ability.
 
 ## Working on and submitting changes
 
-When starting on improvements or new features that are non-trivial, it is always a good idea to first discuss the changes you wish to implement by [opening a github issue](https://github.com/benmvp/list-aws-profiles/issues) before getting started.
+When starting on improvements or new features that are non-trivial, it is always a good idea to first discuss the changes you wish to implement by [opening a github issue](https://github.com/simonjang/list-aws-profiles/issues) before getting started.
 
-If you've found a bug or feature you'd like to work on in our [github issue tracker](https://github.com/benmvp/list-aws-profiles/issues), please comment on the issue to let others know that you'd like to work on it.
+If you've found a bug or feature you'd like to work on in our [github issue tracker](https://github.com/simonjang/list-aws-profiles/issues), please comment on the issue to let others know that you'd like to work on it.
 
 While implementing fixes, please try to change as little code as possible. This helps speed up the review process and helps diminish the chance of additional bugs.
 

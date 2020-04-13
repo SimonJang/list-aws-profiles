@@ -1,4 +1,6 @@
-
-# built lib directory
-lib
 node_modules
+.nyc_output
+coverage
+.vscode
+lib
+pnpm-debug.log
