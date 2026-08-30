@@ -5,38 +5,32 @@ on:
     branches:
       - master
 
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-
 jobs:
-  release:
+  main:
     name: NPM Release
     runs-on: ubuntu-latest
-    timeout-minutes: 15
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v7
+      - name: Checkout
+        uses: actions/checkout@v1
 
-      - name: Use Node.js 22
-        uses: actions/setup-node@v7
+      - name: Use Node v12
+        uses: actions/setup-node@v1
         with:
-          node-version: 22.x
-          cache: npm
-          registry-url: https://registry.npmjs.org
-
-      - name: Use npm 12.0.1
-        run: npm install --global npm@12.0.1
+          node-version: 12
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
+      - name: Double check unit tests
         run: npm test
+        env:
+          CI: true
 
-      - name: Release to npm and GitHub
+      - name: Build package
+        run: npm run build
+
+      - name: Release new version to NPM
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,15 +1,20 @@
 {
 	"compilerOptions": {
+		"target": "es2017",
+		"module": "commonjs",
 		"declaration": true,
-		"module": "node16",
-		"moduleResolution": "node16",
-		"outDir": "lib",
-		"rootDir": "source",
-		"strict": true,
-		"target": "ES2017",
-		"types": ["node"],
+		"removeComments": true,
+		"pretty": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"noImplicitAny": false,
+		"noImplicitReturns": true,
+		"noImplicitUseStrict": false,
+		"noFallthroughCasesInSwitch": true,
 		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true
+		"strictNullChecks": true,
+		"outDir": "lib",
+		"strict": true
 	},
-	"include": ["source/index.ts"]
+	"exclude": ["node_modules", "source/test", "lib"]
 }
